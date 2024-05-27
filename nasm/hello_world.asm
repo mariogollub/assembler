@@ -19,7 +19,7 @@ PutStr:                 ; Label für PutStr
  mov bl,0x07            ; Darstellung von Vordergrund / Hintergrund (Farben etc.)
 
 .nextchar               ; Sprungmarke, um den gesamten Zeichen-String abzuarbeiten
- lodsb                  ; Lädt das jeweiloige Zeichen in al und erhöht Zeiger 
+ lodsb                  ; Lädt das jeweilige Zeichen in al und erhöht Zeiger 
  or al,al               ; setzt zero flag, wenn al = 0
 
  jz .return             ; Falls zero flag gesetzt, dann springe zum Ende der Prozedur bei .return
