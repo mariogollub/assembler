@@ -18,7 +18,7 @@ PutStr:                 ; Label für PutStr
  mov bh,0x00            ; Seitenzahl
  mov bl,0x07            ; Darstellung von Vordergrund / Hintergrund (Farben etc.)
 
-.nextchar               ; Sprungmarke, um den gesamten Zeichen-String abzuarbeiten
+.nextchar:              ; Sprungmarke, um den gesamten Zeichen-String abzuarbeiten
  lodsb                  ; Lädt das jeweilige Zeichen in al und erhöht Zeiger 
  or al,al               ; setzt zero flag, wenn al = 0
 
@@ -28,7 +28,7 @@ PutStr:                 ; Label für PutStr
  
  jmp .nextchar          ; Springe zurück zu .nextchar
  
-.return                 ; Sprungmarke
+.return:                ; Sprungmarke
  ret                    ; Zurück zum (Hauptprogramm) Main
 
 ; Daten
