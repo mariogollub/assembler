@@ -1,0 +1,8 @@
+# Start the GNU Assembler
+as -o bootsector.o bootsector.asm
+
+# Start the Linker
+ld -o bootsector.bin --oformat binary -e init -Ttext 0x7c00 bootsdector.bin bootsector.o
+
+# Start VM qemu for testing:
+qemu-system-x86_64 bootsector.bin
