@@ -2,7 +2,7 @@
 .global init
 
 init:
-    mov $msg, %si
+	mov $msg, %si
 	mov $0xe, %ah
 
 print_char:
@@ -13,7 +13,7 @@ print_char:
 	jmp print_char
 
 done:
-    hlt
+	hlt
 
 msg:
 	.asciz "Hallo Welt"
