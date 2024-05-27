@@ -1,0 +1,11 @@
+I downloaded the nasm.exe from this Link
+
+https://www.nasm.us/pub/nasm/releasebuilds/2.16.03/win64/nasm-2.16.03-win64.zip
+
+Then I copied the hello_world.asm into the same folder together with nasm.exe.
+
+On my MS Windows machine open a terminal and start the command:
+
+nasm.exe hello_world.asm
+
+The output is the bootsector file hello_world
