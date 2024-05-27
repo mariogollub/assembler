@@ -28,7 +28,7 @@ PutStr:                 ; Label für PutStr
  
  jmp .nextchar          ; Springe zurück zu .nextchar
  
-.return
+.return                 ; Sprungmarke
  ret                    ; Zurück zum (Hauptprogramm) Main
 
 ; Daten
