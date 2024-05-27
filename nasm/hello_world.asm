@@ -1,4 +1,4 @@
-[BITS 16]			           	; 16 bit Code Generierung
+[BITS 16]               ; 16 bit Code Generierung
 [ORG 0x7C00]            ; Ursprung
 
 ; Main (Hauptprogramm)
